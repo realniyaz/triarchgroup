@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence, Variants } from 'framer-motion';
-import { Mail, Phone, Search, X, ArrowRight, Send, CheckCircle2, User } from 'lucide-react';
+import { Mail, Phone, Search, X, ArrowRight, Send, CheckCircle2, User, Code2 } from 'lucide-react';
 
 interface Job {
   id: number;
@@ -22,9 +22,19 @@ const CareerPage = () => {
   const CONTACT_EMAIL = "contact.triarchgroup@gmail.com";
   const CONTACT_PHONE = "+91 8796955728";
 
-  const categories = ['All', 'Marketing', 'Business', 'Content'];
+  // Updated categories to include 'Tech'
+  const categories = ['All', 'Tech', 'Marketing', 'Business', 'Content'];
 
+  // Updated jobs array with the new Full Stack Intern role
   const jobs: Job[] = [
+    {
+      id: 0,
+      title: "Full Stack Developer Intern",
+      category: "Tech",
+      type: "Remote / Internship",
+      note: "Fresher • Startup Experience",
+      description: "Join the core founder team to build modern digital products. Must be proficient in React, Next.js, and Python. Offering direct mentorship and project-based or commission-based compensation."
+    },
     {
       id: 1,
       title: "Content Creation Associate",
@@ -102,7 +112,7 @@ const CareerPage = () => {
             animate={{ opacity: 1, y: 0 }}
             className="inline-block px-4 py-2 mb-6 text-[10px] font-black tracking-[0.2em] text-blue-600 uppercase bg-blue-50 rounded-lg"
           >
-            Careers at Triarch
+            Careers at Triarch Group
           </motion.span>
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
@@ -122,7 +132,7 @@ const CareerPage = () => {
         </div>
       </section>
 
-      {/* FIXED Search & Filter Bar */}
+      {/* Search & Filter Bar */}
       <div className="max-w-5xl mx-auto px-6 relative z-30 -mt-8 md:-mt-10">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -134,7 +144,7 @@ const CareerPage = () => {
             <Search className="absolute left-5 top-1/2 -translate-y-1/2 text-slate-400 group-focus-within:text-blue-600 transition-colors size-5" />
             <input 
               type="text"
-              placeholder="Search roles..."
+              placeholder="Search roles (e.g. React, Developer)..."
               className="w-full pl-14 pr-6 py-4 bg-slate-50 border-2 border-transparent rounded-xl md:rounded-2xl focus:bg-white focus:border-blue-500/20 outline-none transition-all text-slate-700 font-bold"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
@@ -178,8 +188,8 @@ const CareerPage = () => {
                 >
                   <div className="flex-1">
                     <div className="flex flex-wrap items-center gap-3 mb-4">
-                      <span className="text-[10px] font-black uppercase tracking-widest text-blue-600 bg-blue-50 px-3 py-1.5 rounded-full border border-blue-100">
-                        {job.category}
+                      <span className="text-[10px] font-black uppercase tracking-widest text-blue-600 bg-blue-50 px-3 py-1.5 rounded-full border border-blue-100 flex items-center gap-1.5">
+                        {job.category === 'Tech' && <Code2 size={12} />} {job.category}
                       </span>
                       {job.note && (
                         <span className="flex items-center gap-2 text-[10px] font-black text-rose-600 bg-rose-50 px-3 py-1.5 rounded-full border border-rose-100 uppercase">
@@ -212,7 +222,7 @@ const CareerPage = () => {
         </AnimatePresence>
       </motion.section>
 
-      {/* Application Modal Code remains the same... */}
+      {/* Application Modal */}
       <AnimatePresence>
         {isModalOpen && activeJob && (
           <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
@@ -259,7 +269,7 @@ const CareerPage = () => {
                     <div className="flex gap-4 items-start">
                       <CheckCircle2 className="text-emerald-500 shrink-0 mt-1" size={20} />
                       <p className="text-slate-600 font-bold text-base md:text-lg leading-snug">
-                        Attach your <span className="text-slate-900">PDF Resume</span>.
+                        Attach your <span className="text-slate-900">Portfolio/Resume</span>.
                       </p>
                     </div>
                   </div>
