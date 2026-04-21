@@ -1,8 +1,8 @@
 import Footer from "@/components/layout/Footer";
-import SDecorLanding from "@/components/sdecor/sdecor";
+import SDecorLanding from "@/components/servenest/sdecor";
 
 export const metadata = {
-  title: "S-Decor | Transform Your Space",
+  title: "Servenest | Transform Your Space",
   description: "Premium interior design and home décor solutions for modern living spaces by Triarch Group.",
 };
 
