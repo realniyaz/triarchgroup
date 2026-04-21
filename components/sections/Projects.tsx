@@ -16,7 +16,16 @@ const projects = [
     href: "/apkidukaan",
   },
   {
-    name: "S-Decor",
+    name: "Naksha",
+    tagline: "The Future of Learning",
+    description:
+      "An AI-driven education platform designed to personalize learning paths and optimize student performance.",
+    logo: "/projects/naksha.jpg", // Ensure this path is correct
+    status: "Coming Soon",
+    href: "/naksha",
+  },
+  {
+    name: "Servenest",
     tagline: "Transform Your Space",
     description:
       "Premium interior design and home décor solutions for modern living spaces.",
@@ -34,22 +43,22 @@ export default function Projects() {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto">
           <span className="inline-flex items-center gap-2 text-sm font-medium text-blue-600 mb-4">
-            <span className="w-2 h-2 rounded-full bg-blue-600" />
+            <span className="w-2 h-2 rounded-full bg-blue-600 animate-pulse" />
             In Development
           </span>
 
-          <h2 className="text-4xl font-bold">
+          <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-slate-900">
             Our Ongoing Projects
           </h2>
 
-          <p className="mt-6 text-slate-600">
+          <p className="mt-6 text-lg text-slate-600">
             Exciting ventures currently in development. Stay tuned for the
             launch of these innovative platforms.
           </p>
         </div>
 
-        {/* Cards */}
-        <div className="mt-20 grid md:grid-cols-2 gap-12">
+        {/* Cards Grid - Optimized for 3 items */}
+        <div className="mt-20 grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
           {projects.map((project, index) => (
             <motion.div
               key={project.name}
@@ -62,71 +71,78 @@ export default function Projects() {
               <div
                 className="
                   relative
+                  h-full
                   bg-white
-                  rounded-3xl
-                  p-12
+                  rounded-[32px]
+                  p-10
                   border
                   border-slate-200/70
                   transition-all
-                  duration-300
-                  hover:-translate-y-[6px]
-                  hover:border-blue-300
-                  hover:shadow-[0_30px_80px_rgba(31,94,255,0.18)]
-                  hover:bg-gradient-to-br
-                  hover:from-blue-50/40
-                  hover:to-white
+                  duration-500
+                  hover:-translate-y-2
+                  hover:border-blue-400/50
+                  hover:shadow-[0_40px_80px_-15px_rgba(31,94,255,0.12)]
+                  flex flex-col
                 "
               >
-                {/* Status */}
-                <span className="absolute top-6 right-6 text-xs font-medium px-3 py-1 rounded-full bg-blue-100 text-blue-600">
-                  {project.status}
-                </span>
+                {/* Status Badge */}
+                <div className="flex justify-between items-start mb-10">
+                  <span className="text-[10px] font-bold uppercase tracking-widest text-slate-400">
+                    Project 0{index + 1}
+                  </span>
+                  <span className="text-xs font-semibold px-3 py-1 rounded-full bg-blue-50 text-blue-600 border border-blue-100">
+                    {project.status}
+                  </span>
+                </div>
 
-                {/* Logo */}
-                <div className="flex justify-center mb-8">
+                {/* Logo Section */}
+                <div className="mb-8 flex items-center justify-center h-16 w-16 bg-slate-50 rounded-2xl group-hover:bg-blue-50 transition-colors duration-500 overflow-hidden">
                   <Image
                     src={project.logo}
                     alt={project.name}
-                    width={64}
-                    height={64}
+                    width={48}
+                    height={48}
+                    className="object-contain transition-transform duration-500 group-hover:scale-110"
                   />
                 </div>
 
-                {/* Content */}
-                <div className="text-center">
-                  <h3 className="text-2xl font-bold mb-2">
+                {/* Content Section */}
+                <div className="flex-grow">
+                  <h3 className="text-2xl font-bold text-slate-900 mb-2">
                     {project.name}
                   </h3>
 
-                  <p className="text-blue-600 font-medium mb-4">
+                  <p className="text-blue-600 text-sm font-semibold mb-4 tracking-wide">
                     {project.tagline}
                   </p>
 
-                  <p className="text-slate-600 max-w-md mx-auto">
+                  <p className="text-slate-500 text-sm leading-relaxed">
                     {project.description}
                   </p>
                 </div>
 
-                {/* CTA */}
-                
-                <div className="mt-10 flex justify-center">
-                  <Link href={project.href}>
-                  <button
-                    className="
-                      px-6 py-3
-                      rounded-xl
-                      border border-blue-600
-                      text-blue-600
-                      font-medium
-                      inline-flex items-center gap-2
-                      transition-all
-                      duration-200
-                      group-hover:bg-blue-600
-                      group-hover:text-white
-                    "
-                  >
-                    Learn More <ArrowRight size={16} />
-                  </button>
+                {/* CTA Button */}
+                <div className="mt-10">
+                  <Link href={project.href} className="inline-block w-full">
+                    <button
+                      className="
+                        w-full
+                        px-6 py-4
+                        rounded-2xl
+                        border border-slate-200
+                        text-slate-900
+                        text-sm
+                        font-bold
+                        inline-flex items-center justify-center gap-2
+                        transition-all
+                        duration-300
+                        group-hover:bg-slate-900
+                        group-hover:text-white
+                        group-hover:border-slate-900
+                      "
+                    >
+                      View Details <ArrowRight size={14} />
+                    </button>
                   </Link>
                 </div>
               </div>

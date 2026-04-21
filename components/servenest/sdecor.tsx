@@ -63,7 +63,7 @@ export default function SDecorLanding() {
             className="max-w-3xl"
           >
             <motion.div variants={itemVariants} className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-xs font-bold uppercase tracking-wider mb-6">
-              <Sparkles className="w-3 h-3" /> Launching Soon // S-Decor
+              <Sparkles className="w-3 h-3" /> Launching Soon // Servenest
             </motion.div>
             
             <motion.h1 variants={itemVariants} className="text-5xl lg:text-7xl font-extrabold text-slate-900 mb-6 leading-tight">
