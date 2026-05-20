@@ -75,7 +75,7 @@ const projects: Project[] = [
     longDesc: "A high-conversion environment featuring an advanced NLP engine capable of handling complex administrative queries.",
     category: "Artificial Intelligence",
     image: "/projects/tutified.png",
-    link: "/maintanence"
+    link: "http://tutified.triarchgroup.in/"
   },
   {
     id: 7,
