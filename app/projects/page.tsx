@@ -45,7 +45,7 @@ const projects: Project[] = [
     longDesc: "An exclusive platform developed to manage large-scale public outreach, grievance tracking, and real-time development updates.",
     category: "Government Affairs",
     image: "/projects/bjp-logo-png.png",
-    link: "#"
+    link: "/maintanence"
   },
   {
     id: 4,
@@ -55,7 +55,7 @@ const projects: Project[] = [
     longDesc: "Utilizing intelligent routing to connect certified service providers with luxury residential hubs.",
     category: "Service Ecosystem",
     image: "/projects/sdecor.png",
-    link: "#"
+    link: "/maintanence"
   },
   {
     id: 5,
@@ -65,7 +65,7 @@ const projects: Project[] = [
     longDesc: "Designed with a focus on cognitive load management, Naksha offers AI-synced learning paths for elite students.",
     category: "Education",
     image: "/projects/naksha.jpg",
-    link: "#"
+    link: "/maintanence"
   },
   {
     id: 6,
@@ -75,8 +75,48 @@ const projects: Project[] = [
     longDesc: "A high-conversion environment featuring an advanced NLP engine capable of handling complex administrative queries.",
     category: "Artificial Intelligence",
     image: "/projects/tutified.png",
-    link: "#"
-  }
+    link: "/maintanence"
+  },
+  {
+    id: 7,
+    title: "ApnaFarm",
+    subtitle: "Beautiful Resort | Uttarakhand",
+    description: "24/7 intelligent guest engagement and booking assistance system for luxury resort experiences.",
+    longDesc: "A premium AI-powered hospitality ecosystem for ApnaFarm Resort featuring an advanced conversational engine capable of handling guest inquiries, room recommendations, booking assistance, travel guidance, local activity suggestions, and personalized resort experiences with seamless customer interaction.",
+    category: "Resort Business",
+    image: "/projects/apnafarm.png",
+    link: "/maintanence"
+  },
+  {
+    id: 8,
+    title: "VYRN",
+    subtitle: "Street Wear Brand - By Aryan",
+    description: "24/7 AI-powered fashion engagement and customer experience system for modern streetwear culture.",
+  longDesc: "A premium digital commerce ecosystem for VYRN featuring an advanced AI-driven interaction engine capable of handling personalized styling recommendations, product discovery, customer engagement, fashion assistance, order support, and high-conversion shopping experiences tailored for the next generation of streetwear consumers.",
+    category: "Fashion",
+    image: "/projects/vyrn.png",
+    link: "/maintanence"
+  },
+  {
+    id: 9,
+    title: "Tare",
+    subtitle: "Elegance in Every Thread",
+    description: "24/7 AI-powered luxury fashion experience system crafted for elegant and modern lifestyle consumers.",
+  longDesc: "A sophisticated digital commerce ecosystem for TARÉ featuring an intelligent AI-driven engagement engine capable of delivering personalized fashion recommendations, seamless customer interaction, premium shopping assistance, order support, and curated luxury experiences designed for modern elegance and timeless style.",
+    category: "Fashion",
+    image: "/projects/tare.jpeg",
+    link: "/maintanence"
+  },
+  {
+    id: 10,
+    title: "RitiVastra",
+    subtitle: "Drapped In Traditiom",
+    description: "Premium Indian ethnic wear brand celebrating timeless saree traditions with modern elegance.",
+    longDesc: "RitiVastra is a premium ethnic fashion brand rooted in the richness of Indian heritage and craftsmanship. Specializing in elegant sarees and traditional wear, the brand blends cultural authenticity with refined contemporary aesthetics. Every collection is thoughtfully curated to reflect grace, femininity, and timeless tradition through luxurious fabrics, intricate detailing, and sophisticated designs. RitiVastra stands for elegance woven into every drape — creating a premium fashion experience for women who value culture, style, and individuality.",
+    category: "Ethnic Brand",
+    image: "/projects/Ritivastra.png",
+    link: "/maintanence"
+  },
 ];
 
 export default function ProjectsPage() {
