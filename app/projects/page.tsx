@@ -117,6 +117,16 @@ const projects: Project[] = [
     image: "/projects/Ritivastra.png",
     link: "/maintanence"
   },
+  {
+    id: 11,
+    title: "Nature Homez",
+    subtitle: "Premium Real Estate Management",
+    description: "24/7 AI-powered property discovery and customer engagement platform for premium real estate experiences.",
+    longDesc: "A luxury real estate ecosystem for Nature Homez featuring an intelligent AI-driven engagement engine capable of handling property discovery, personalized investment recommendations, buyer assistance, inquiry management, lead nurturing, and seamless digital experiences across premium residential opportunities in Delhi–NCR and Uttarakhand.",
+    category: "Real Estate",
+    image: "/projects/nh.png",
+    link: "/maintanence"
+  },
 ];
 
 export default function ProjectsPage() {
