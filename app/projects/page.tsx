@@ -125,7 +125,7 @@ const projects: Project[] = [
     longDesc: "A luxury real estate ecosystem for Nature Homez featuring an intelligent AI-driven engagement engine capable of handling property discovery, personalized investment recommendations, buyer assistance, inquiry management, lead nurturing, and seamless digital experiences across premium residential opportunities in Delhi–NCR and Uttarakhand.",
     category: "Real Estate",
     image: "/projects/nh.png",
-    link: "/maintanence"
+    link: "https://nature-homez.vercel.app/"
   },
 ];
 

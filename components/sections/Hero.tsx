@@ -83,9 +83,9 @@ export default function Hero() {
 
           {/* STATS */}
           <div className="mt-16 flex gap-12">
-            <Stat value="5+" label="Years Experience" />
+            <Stat value="2+" label="Years Experience" />
             <Stat value="5" label="Business Verticals" />
-            <Stat value="100+" label="Projects" />
+            <Stat value="10+" label="Projects" />
           </div>
         </motion.div>
 
