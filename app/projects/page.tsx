@@ -45,7 +45,7 @@ const projects: Project[] = [
     longDesc: "An exclusive platform developed to manage large-scale public outreach, grievance tracking, and real-time development updates.",
     category: "Government Affairs",
     image: "/projects/bjp-logo-png.png",
-    link: "/maintanence"
+    link: "https://www.dhirendrasingh.in/"
   },
   {
     id: 4,
