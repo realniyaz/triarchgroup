@@ -127,6 +127,16 @@ const projects: Project[] = [
     image: "/projects/nh.png",
     link: "https://nature-homez.vercel.app/"
   },
+  {
+    id: 12,
+    title: "The Sports Front - APP",
+    subtitle: "Legends are Returning",
+    description: "AI-powered customer engagement platform for sports experience.",
+    longDesc: "A luxury Sports ecosystem for THE SPORTS FRONT featuring an intelligent AI-driven engagement engine capable of handling property recommendations, assistance,user management and seamless digital experiences.",
+    category: "Real Estate",
+    image: "/projects/TSF - logo.png",
+    link: "/maintanence"
+  },
 ];
 
 export default function ProjectsPage() {
