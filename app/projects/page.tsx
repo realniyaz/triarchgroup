@@ -137,6 +137,16 @@ const projects: Project[] = [
     image: "/projects/TSF - logo.png",
     link: "/maintanence"
   },
+  {
+  id: 13,
+  title: "Gaur Chrysalis 2.0",
+  subtitle: "3 & 4 BHK Luxury Apartments",
+  description: "Ultra-luxury high-end residential portal engineered for seamless lead acquisition.",
+  longDesc: "A premium real estate ecosystem for Gaur Chrysalis featuring an immersive design layout, contextual navigation matrices, clean dynamic model collection modals, and a specialized interactive AI Smart Bot acting as a digital guide for prospective homebuyers.",
+  category: "Web Engineering & Marketing Development",
+  image: "/logo.png",
+  link: "https://gaur-chrysalis.vercel.app/"
+}
 ];
 
 export default function ProjectsPage() {
