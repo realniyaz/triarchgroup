@@ -144,8 +144,8 @@ const projects: Project[] = [
   description: "Ultra-luxury high-end residential portal engineered for seamless lead acquisition.",
   longDesc: "A premium real estate ecosystem for Gaur Chrysalis featuring an immersive design layout, contextual navigation matrices, clean dynamic model collection modals, and a specialized interactive AI Smart Bot acting as a digital guide for prospective homebuyers.",
   category: "Real Estate",
-  image: "/projects/logo.png",
-  link: "https://gaur-chrysalis.vercel.app/"
+  image: "/projects/gaur.jpeg",
+  link: "https://www.gaursresidences.in/"
 }
 ];
 
