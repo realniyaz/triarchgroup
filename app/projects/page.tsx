@@ -156,6 +156,26 @@ const projects: Project[] = [
   category: "Real Estate",
   image: "/projects/ace.png",
   link: "/maintanence"
+},
+{
+  id: 15,
+  title: "ELDECO - Branding & Ad Strategies",
+  subtitle: "3 & 4 BHK Luxury Apartments + Penthouses",
+  description: "Quality creatives engineered for seamless lead acquisition.",
+  longDesc: "A premium real estate ecosystem for Echoes of Eden & 7 Peaks featuring an immersive designs & directions.",
+  category: "Real Estate",
+  image: "/projects/eldeco.png",
+  link: "/maintanence"
+},
+{
+  id: 16,
+  title: "Alforel - Accounting Serives in Dubai & UAE",
+  subtitle: "Accounting Services",
+  description: "Portal Engineered for lead acquisition.",
+  longDesc: "A landing page for Alforel Accounting Service.",
+  category: "Service Ecosystem",
+  image: "/projects/alforel.png",
+  link: "https://alforel.com/accountingdubai/"
 }
 ];
 
