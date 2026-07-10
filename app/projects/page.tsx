@@ -155,7 +155,7 @@ const projects: Project[] = [
   longDesc: "A premium real estate ecosystem for Gaur Chrysalis featuring an immersive design layout, contextual navigation matrices, clean dynamic model collection modals, and a specialized interactive AI Smart Bot acting as a digital guide for prospective homebuyers.",
   category: "Real Estate",
   image: "/projects/ace.png",
-  link: "/maintanence"
+  link: "https://aceparkwayexp.in"
 },
 {
   id: 15,
